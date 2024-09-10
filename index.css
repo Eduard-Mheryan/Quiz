@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    height: 100vh;
+    color: #333;
+    margin: 0;
+}
+
+/* Container for the top position */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Title Styling */
+.title {
+    font-size: 28px;
+    color: #3b3b98;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #eceff1;
+    padding: 10px;
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    color: #555;
+}
+
+/* Search button with the icon */
+.search-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #3b3b98;
+    font-size: 18px;
+}
+
+.search-btn:hover {
+    color: #5567ff;
+}
+
+/* Make the button and input fit nicely */
+.search-bar input::placeholder {
+    color: #999;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
+
+main {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+main .Headline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3b3b98;
+    font-size: 30px;
+}
+
+/* Flexbox container for blog elements */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between blog items horizontally */
+}
+
+/* Individual blog styling */
+.blog {
+    background-color: #3b3b98;
+    width: 300px;
+    height: 300px;
+    padding: 20px; /* Padding around the image */
+    box-sizing: border-box; /* Ensures padding is inside the div dimensions */
+    margin-bottom: 40px; /* Extra space between blog items vertically */
+}
+
+.blog img {
+    width: 100%;
+    height: 94%;
+    object-fit: cover; /* Ensures the image fits well inside the container */
+    display: block;
+}
+
+.blog .Kind-of {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.blog:hover {
+    cursor: pointer;
+    background-color: #5567ff;
+    transition: all 0.5s linear ;
+}

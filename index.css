@@ -12,7 +12,6 @@ body {
     margin: 0;
 }
 
-/* Container for the top position */
 .container {
     text-align: center;
     background-color: #fff;
@@ -71,21 +70,9 @@ body {
     color: #999;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 20px;
-        width: 100%;
-    }
-
-    .title {
-        font-size: 24px;
-    }
-}
-
 main {
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 main .Headline-container {
@@ -100,8 +87,8 @@ main .Headline-container {
 .blog-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; /* Adds space between blog items horizontally */
+    justify-content: center;
+    gap: 40px; /* Adds space between blog items horizontally */
 }
 
 /* Individual blog styling */
@@ -112,6 +99,7 @@ main .Headline-container {
     padding: 20px; /* Padding around the image */
     box-sizing: border-box; /* Ensures padding is inside the div dimensions */
     margin-bottom: 40px; /* Extra space between blog items vertically */
+    border-radius: 12px;
 }
 
 .blog img {
@@ -133,4 +121,11 @@ main .Headline-container {
     cursor: pointer;
     background-color: #5567ff;
     transition: all 0.5s linear ;
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
 }

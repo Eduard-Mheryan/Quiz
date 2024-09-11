@@ -99,25 +99,9 @@ body {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 600px) {
+@media (max-width: 500px) {
     .container {
-        padding: 20px;
-    }
-
-    #quiz-title {
-        font-size: 24px;
-    }
-
-    #question-text {
-        font-size: 18px;
-    }
-
-    #answer-input {
-        font-size: 14px;
-    }
-
-    #next-question-btn, #retry-btn, #home-btn {
-        font-size: 14px;
-        padding: 10px 16px;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 }
